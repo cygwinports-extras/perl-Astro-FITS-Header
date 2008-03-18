@@ -1,0 +1,70 @@
+perl-Astro-FITS-Header
+------------------------------------------
+Astro::FITS::Header and associated sub-classes are tools for reading, 
+modifying and then writing out FITS standard header blocks to FITS, NDF 
+and GSD files. The module now fully supports ESO HIERARCH header 
+keywords. Support for instantiating Astro::FITS:Header objects from 
+Starlink::AST FrameSet objects is also supported.
+
+Runtime requirements:
+  cygwin-1.5.25-7
+  perl-5.10.0-3
+
+Build requirements:
+(besides corresponding -devel packages)
+  binutils-20060817-1
+  cygport-0.3.9-1
+  gcc-core-3.4.4-3
+  make-3.81-1
+
+Canonical website:
+  http://search.cpan.org/dist/Astro-FITS-Header/
+
+Canonical download:
+  http://search.cpan.org/CPAN/authors/id/T/TJ/TJENNESS/
+
+-------------------------------------------
+
+Build instructions:
+  unpack perl-Astro-FITS-Header-3.0-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./perl-Astro-FITS-Header-3.0-X.cygport all
+
+This will create:
+  /usr/src/perl-Astro-FITS-Header-3.0-X-src.tar.bz2
+  /usr/src/perl-Astro-FITS-Header-3.0-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /usr/lib/perl5/vendor_perl/5.10/Astro/FITS/Header.pm
+  /usr/lib/perl5/vendor_perl/5.10/Astro/FITS/Header/AST.pm
+  /usr/lib/perl5/vendor_perl/5.10/Astro/FITS/Header/CFITSIO.pm
+  /usr/lib/perl5/vendor_perl/5.10/Astro/FITS/Header/GSD.pm
+  /usr/lib/perl5/vendor_perl/5.10/Astro/FITS/Header/Item.pm
+  /usr/lib/perl5/vendor_perl/5.10/Astro/FITS/Header/NDF.pm
+  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/auto/Astro/FITS/Header/.packlist
+  /usr/share/doc/perl-Astro-FITS-Header-3.0/ChangeLog
+  /usr/share/doc/perl-Astro-FITS-Header-3.0/GPL
+  /usr/share/doc/perl-Astro-FITS-Header-3.0/README
+  /usr/share/doc/perl-Astro-FITS-Header-3.0/TODO
+  /usr/share/man/man3/Astro.FITS.Header.3pm.gz
+  /usr/share/man/man3/Astro.FITS.Header.AST.3pm.gz
+  /usr/share/man/man3/Astro.FITS.Header.CFITSIO.3pm.gz
+  /usr/share/man/man3/Astro.FITS.Header.GSD.3pm.gz
+  /usr/share/man/man3/Astro.FITS.Header.Item.3pm.gz
+  /usr/share/man/man3/Astro.FITS.Header.NDF.3pm.gz
+
+------------------
+
+Port Notes:
+
+----- version 3.0-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/
